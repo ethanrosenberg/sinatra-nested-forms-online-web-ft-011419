@@ -8,4 +8,8 @@ class Ship
     @booty = booty
     @@ships << self
   end
+
+  def self.all
+    @@ships
+  end
 end
