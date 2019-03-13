@@ -8,4 +8,8 @@ class Pirate
     @height = params[:height]
     @@pirates << self
   end
+
+  def self.all
+    @@pirates
+  end
 end
