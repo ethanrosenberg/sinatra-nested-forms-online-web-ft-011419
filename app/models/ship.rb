@@ -2,10 +2,10 @@ class Ship
   attr_accessor :name, :type, :booty
 
   @@ships = []
-  def initialize(params)
-    @name = params[:name]
-    @type = params[:type]
-    @booty = params[:booty]
+  def initialize(data)
+    @name = data[:name]
+    @type = data[:type]
+    @booty = data[:booty]
     @@ships << self
   end
 
